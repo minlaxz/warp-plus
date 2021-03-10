@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Warp+ by laxz</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Easy & free way to add 1GB to your WARP+. Open source on GitHub. Automate using the API.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        .containerd {
+            background: linear-gradient(135deg,
+                    #ffffff 0%,
+                    #123456 50%,
+                    #123456 50%,
+                    #000000 100%);
+        }
+
+        .cc {
+            background: linear-gradient(to top left, #fff 50%, #123456 50%);
+        }
+
+        .ccs {
+            background: linear-gradient(to top right,
+                    #fff 0%,
+                    #123456 50%,
+                    #123456 50%,
+                    #000000 100%);
+        }
+
+        #overview {
+            background: linear-gradient(to top left, #ebebeb 70%, #fff 70.1%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cc text-center" style="padding:1%;">
+        <h3 style="color:yellowgreen">
+            Get* 1.1.1.1 Warp+ Data
+        </h3>
+        <form action="/get" style="margin:5%">
+            <div class="row" style="color:yellowgreen">
+                <div class="col">
+                    <input type="text" id="uid" name="uid" placeholder="Paste 1.1.1.1 Client ID">
+                    <input style="margin-top:3%" type="submit">
+                </div>
+                <div class="col">
+                    <p class="text-muted">Client ID (≡ > Advanced > Diagnostics > ID)</p>
+                </div>
+            </div>
+        </form>
+        <p style="color: orange;">{{ "Proxy is ACTIVE. Requests might be slower." if proxy == True}}</p>
+        <p style="color: rosybrown;">{{ "Proxy is DEACTIVATED. great!" if proxy == False}}</p>
+        <p style="color: {{ color }};">{{ success }}</p>
+        <p style="color:lightcoral">Tip:
+            Set up an IFTTT applet to automate adding a gigabyte of data. Use this webhook: </p>
+        <code>GET {{ host }}getjson?uid=&lt;Your 1.1.1.1 Client ID&gt;</code>
+        <p class="text-muted text-center">This feature is currently under maintaince.</p>
+    </div>
+
+    <div class="container">
+        <p>
+            Disclaimer : I am hosting this website from my personal computer
+            and it is unfortunately behind the NAT.
+            This service will run from 9am to 11pm.
+        </p>
+        <p>This project is based on <a rel="noopener" target="_blank"
+                href="https://github.com/ALIILAPRO/warp-plus-cloudflare">ALIILAPRO/warp-plus-cloudflare</a>. CSS: <a
+                rel="noopener" target="_blank" href="https://getbootstrap.com">bootstrap.css</a>.</p>
+        <pre>adapted by minlaxz 😘</pre>
+
+    </div>
+    <div class="containerd fixed-bottom">
+        <a rel="noopener" target="_blank" href="https://github.com/minlaxz/">minlaxz/warp-plus</a>!
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
