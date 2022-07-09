@@ -1,7 +1,7 @@
 Unlimited data for Cloudflare warp-plus
 ===
 
-Inspired by [Original Author](@ALIILAPRO) :+1:
+Inspired by [Original Author](https://github.com/ALIILAPRO/warp-plus-cloudflare) :+1:
 
 Description : Cloudflare's ~~warp account~~, no this is warp plus!
 
@@ -32,4 +32,4 @@ then re-follow the steps _3_, (_4_), _5_ and _6_
 
 The other thing needed to be mentioned is that, I simply made this work using [deta.sh](https://deta.sh).
 
-You can hopefully get **warp plus data** using this [link](https://mvtvso.deta.dev/), of course, it is free of charge 😏.
+You can hopefully get **warp plus data** using this [link](https://warp.deta.dev//), of course, it is free of charge 😏.
