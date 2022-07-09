@@ -23,7 +23,7 @@ Description : Cloudflare's ~~warp account~~, no this is warp plus!
 --
 
 from docker hub > 
-```docker pull minlaxz/warp-plus:latest```
+```docker pull minlaxz/warp-plus:1.1```
 
 from github container registry >
 ```docker pull ghcr.io/minlaxz/warp-plus/warp:1.1```
