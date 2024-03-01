@@ -1,4 +1,4 @@
-FROM python:3.11.3-alpine as base
+FROM python:3.12.2-alpine as base
 
 WORKDIR /usr/src/app
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -8,7 +8,7 @@ RUN pip install -U pip setuptools wheel
 COPY ./requirements.txt .
 RUN pip wheel --no-cache-dir --no-deps --wheel-dir /usr/src/app/wheels -r requirements.txt
 
-FROM python:3.11.3-alpine
+FROM python:3.12.2-alpine
 
 RUN mkdir -p /home/app
 ENV APP_HOME=/home/app/warpapp
